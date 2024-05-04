@@ -91,18 +91,6 @@ const config = {
 	async redirects() {
 		return await getRedirectionRules();
 	},
-  async rewrites() {
-    return [
-      {
-        source: "/blog",
-        destination: "https://hashnodedevil.vercel.app/blog", -> Replace https://starter-kit-rose-seven.vercel.app with your own Vercel deployment URL from step 1
-      },
-      {
-        source: "/blog/:path*",
-        destination: "https://hashnodedevil.vercel.app/blog/:path*", -> Replace https://starter-kit-rose-seven.vercel.app with your own Vercel deployment URL from step 1
-      },
-    ];
-  },
 };
 
 module.exports = config;
